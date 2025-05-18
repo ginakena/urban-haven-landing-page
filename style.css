@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+:root{
+    --primary-font: "Lora", serif;
+    --secondary-font: 
+    --primary-color: #FBDB93;
+    --secondary-color: #8A2D3B;
+    scroll-behavior: smooth;
+}
+
+
+::selection{
+    background-color: var(--primary-color);
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: var(--primary-font);
+}
+
+.header{
+    display: flex;
+    background-color: rgb(235, 234, 225);
+
+
+}
+.header-navigation{
+    display: flex;
+}
+.logo{
+    margin-right: 10px;
+    height: 40px;
+
+}
+.logo-text{
+    font-size: small;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+
+
