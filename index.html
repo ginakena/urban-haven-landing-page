@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Urban Haven</title>
+    <link rel="icon" href="/home.svg" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,30 +13,283 @@
       href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Underdog&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
 
   <body>
     <header class="header">
-      <div class="header-logo">
-        <img class="logo" src="./images/logo.svg" alt="logo">
-        <p class="logo-text">Urban Haven Apartments</p>
-      </div>
-      <nav class="header-nav">
+      <div class="header-navigation">
+        <a href="#" class="header-logo-link">
+          <img src="./images/logo.svg" class="logo" alt="urban haven logo" />
+          <p class="logo-text">Urban Haven Apartments</p>
+        </a>
+        <nav class="header-nav">
           <ol class="header-nav-list">
-            <li class="header-nav-list-item"><a href="#">home</a></li>
-            <li class="header-nav-list-item"><a href="#">About</a></li>
-            <li class="header-nav-list-item"><a href="#menu">Houses</a></li>
-            <li class="header-nav-list-item"><a href="#">contact</a></li>
-            <li><a href="#" class="header-cta-btn">Contact Us →</a></li>
+            <li class="header-nav-list-item"><a href="#home">Home</a></li>
+            <li class="header-nav-list-item"><a href="#spaces">Spaces</a></li>
+            <li class="header-nav-list-item">
+              <a href="#amenities">Amenities</a>
+            </li>
+            <li class="header-nav-list-item">
+              <a href="#location">Location</a>
+            </li>
+            <li><a href="#contact" class="header-cta-btn">Contact Us →</a></li>
           </ol>
         </nav>
+      </div>
     </header>
-    <h1>Urban Haven Apartmets</h1>
-    <section class="hero-section">
-
+    <section class="hero-section" id="home">
+      <div class="hero-text">
+        <h1>Your Dream Apartment is Just a Click Away</h1>
+        <div class="trust">
+          <div class="avatars">
+            <img src="https://i.pravatar.cc/30?img=1" alt="User" />
+            <img src="https://i.pravatar.cc/30?img=2" alt="User" />
+            <img src="https://i.pravatar.cc/30?img=3" alt="User" />
+            <img src="https://i.pravatar.cc/30?img=4" alt="User" />
+          </div>
+          <div class="trusttext-container">
+            <div class="trust-stars">
+              <p>★★★★★</p>
+            </div>
+            <div class="trust-text">
+              <p>Trusted by 5K+ customers</p>
+            </div>
+          </div>
+        </div>
+        <p>
+          Are you looking for a place to call home? Worry not! We're here to
+          help you find the perfect place to call home!!
+        </p>
+        <a href="#spaces" class="btn-secondary">Explore Apartments →</a>
+      </div>
     </section>
+
+    <section class="spaces-section" id="spaces">
+      <div class="section-header">
+        <h2>Available Spaces</h2>
+        <p>Choose from our variety of comfortable living spaces</p>
+      </div>
+      <div class="spaces-grid">
+        <div class="space-card">
+          <img src="./images/single-room.jpg" alt="Single Room" />
+          <h3>Single Room</h3>
+          <p class="price">Kshs.3,500/month</p>
+          <p class="description">
+            Cozy and budget friendly rooms suitable for individuals
+          </p>
+        </div>
+        <div class="space-card">
+          <img src="./images/bedsitter.jpg" alt="Bedsitter" />
+          <h3>Bedsitter</h3>
+          <p class="price">Kshs.5,500/month</p>
+          <p class="description">
+            Cozy and comfortable bedsitters with a kitchen area and sink
+            suitable for individuals and couples
+          </p>
+        </div>
+        <div class="space-card">
+          <img src="./images/studio-apartment.jpg" alt="Studio Apartment" />
+          <h3>Studio Apartment</h3>
+          <p class="price">Kshs.7,000/month</p>
+          <p class="description">
+            Stylish and functional apartments featuring an open layout with a
+            combined living, sleeping, and dining area
+          </p>
+        </div>
+        <div class="space-card">
+          <img src="./images/one-bedroom.jpg" alt="One Bedroom Apartment" />
+          <h3>One Bedroom Apartment</h3>
+          <p class="price">Kshs.8,500/month</p>
+          <p class="description">
+            Spacious apartments with a separate bedroom, ideal for individuals
+            or couples
+          </p>
+        </div>
+        <div class="space-card">
+          <img src="./images/two-bedroom.jpg" alt="Two Bedroom Apartment" />
+          <h3>Two Bedroom Apartment</h3>
+          <p class="price">Kshs.10,000/month</p>
+          <p class="description">
+            Larger apartments with two separate bedrooms, suitable for small
+            families or roommates
+          </p>
+        </div>
+        <div class="space-card">
+          <img
+            src="./images/one-bedroomselfcontained.jpg"
+            alt="One Bedroom Self-Contained"
+          />
+          <h3>One Bedroom Self-Contained</h3>
+          <p class="price">Kshs.15,000/month</p>
+          <p class="description">
+            Apartments with a separate bedroom and private amenities, offering
+            utmost privacy
+          </p>
+        </div>
+        <div class="space-card">
+          <img
+            src="./images/two-bedroomselfcontained.jpg"
+            alt="Two Bedroom Self-Contained"
+          />
+          <h3>Two Bedroom Self-Contained</h3>
+          <p class="price">Kshs.20,000/month</p>
+          <p class="description">
+            Apartments with two bedrooms and private amenities, providing ample
+            space and comfort
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="amenities-section" id="amenities">
+      <div class="section-header">
+        <h2>Our Amenities</h2>
+        <p>Enjoy these fantastic amenities with your apartment</p>
+      </div>
+      <div class="amenities-grid">
+        <div class="amenity-card">
+          <i class="fas fa-wifi"></i>
+          <h3>Free WiFi</h3>
+          <p>Available for all except single rooms</p>
+        </div>
+        <div class="amenity-card">
+          <i class="fas fa-parking"></i>
+          <h3>Free Parking</h3>
+          <p>Available for all except single rooms and bedsitters</p>
+        </div>
+        <div class="amenity-card">
+          <i class="fas fa-tshirt"></i>
+          <h3>On-site Laundry</h3>
+          <p>Only Kshs.150 per basket</p>
+        </div>
+        <div class="amenity-card">
+          <i class="fas fa-dumbbell"></i>
+          <h3>Free Gym</h3>
+          <p>Available for all except single rooms and bedsitters</p>
+        </div>
+        <div class="amenity-card">
+          <i class="fas fa-swimming-pool"></i>
+          <h3>Swimming Pool</h3>
+          <p>Free for all residents</p>
+        </div>
+        <div class="amenity-card">
+          <i class="fas fa-water"></i>
+          <h3>Free Water</h3>
+          <p>Available for all residents</p>
+        </div>
+        <div class="amenity-card">
+          <i class="fas fa-film"></i>
+          <h3>Community Theatre</h3>
+          <p>Free for all residents</p>
+        </div>
+        <div class="amenity-card">
+          <i class="fas fa-elevator"></i>
+          <h3>Elevator Access</h3>
+          <p>Easy access to upper floors</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="location-section" id="location">
+      <div class="section-header">
+        <h2>Our Location</h2>
+        <p>Find us in the heart of Kiharu, Murang'a</p>
+      </div>
+      <div class="location-content">
+        <div class="location-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7979.007421036817!2d37.143477137403536!3d-0.7195319190594001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18289874dd56f1a5%3A0xed3b1918af62f2cd!2sKiharu%2C%20Murang&#39;a!5e0!3m2!1sen!2ske!4v1747645956781!5m2!1sen!2ske"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="location-text">
+          <h3>Urban Haven Apartments</h3>
+          <p>Kiharu, Murang'a</p>
+          <p>12 years of excellent service in the house renting business</p>
+          <p>Easy access to public transport, shopping centers, and schools</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="section-header">
+        <h2>Contact Us</h2>
+        <p>Get in touch for inquiries or to book a viewing</p>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <p><i class="fas fa-phone"></i> +254718764327</p>
+          <p><i class="fas fa-envelope"></i> urhaven@apartments.com</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form>
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" required />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
     <footer class="footer">
-      
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="./images/logo.svg" alt="Urban Haven Logo" />
+          <p>Urban Haven Apartments</p>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#spaces">Spaces</a></li>
+            <li><a href="#amenities">Amenities</a></li>
+            <li><a href="#location">Location</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <p>+254718764327</p>
+          <p>urhaven@apartments.com</p>
+          <p>Kiharu, Murang'a</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; By Makena Regina. All Rights Reserved.</p>
+      </div>
     </footer>
   </body>
 </html>
